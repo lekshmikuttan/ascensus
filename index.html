@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ascensus</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(180deg, #f9fafb, #eef2f7);
+      color: #111827;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* ---------- HEADER ---------- */
+    header {
+      padding: 3.5rem 1rem 2.5rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    header p {
+      margin-top: 0.6rem;
+      font-size: 1.2rem;
+      color: #6b7280;
+    }
+
+    .insta-link {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      color: #2563eb;
+      transition: transform 0.3s ease;
+    }
+    .insta-link:hover {
+      transform: scale(1.15);
+    }
+    .insta-icon {
+      width: 26px;
+      height: 26px;
+    }
+
+    /* ---------- TEAM ---------- */
+    .team {
+      width: 90%;
+      max-width: 1200px;
+      margin: 3rem auto 5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .member {
+      background: white;
+      border-radius: 1.25rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .member:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .member img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .member:hover img {
+      transform: scale(1.05);
+    }
+
+    .info {
+      padding: 1.3rem;
+    }
+
+    .info h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+    }
+
+    .role {
+      color: #6b7280;
+      font-size: 0.95rem;
+      margin-top: 0.2rem;
+    }
+
+    .bio {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #374151;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: all 0.3s ease;
+    }
+
+    .member:hover .bio {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #111827;
+      color: #f9fafb;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    footer h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    footer p {
+      margin: 0.6rem 0 1.5rem;
+      color: #9ca3af;
+    }
+
+    .insta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.6rem;
+      border-radius: 999px;
+      background: #2563eb;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .insta-btn:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    footer span {
+      display: block;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a class="insta-link" href="https://www.instagram.com/ascensus_03?igsh=dmdhaTIxMWU5ajA=" target="_blank" aria-label="Ascensus Instagram">
+      <svg class="insta-icon" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+      </svg>
+    </a>
+
+    <h1>Ascensus</h1>
+    <p>Earned. Never Given.</p>
+  </header>
+
+  <!-- TEAM -->
+  <section class="team">
+
+    <div class="member">
+      <img src="aw.jpeg" alt="Alwin">
+      <div class="info">
+        <h2>Alwin</h2>
+        <p class="role">Creative Head</p>
+        <p class="bio">Leads creative vision and storytelling.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="noel.jpeg" alt="Noel">
+      <div class="info">
+        <h2>Noel</h2>
+        <p class="role">Media Head</p>
+        <p class="bio">Manages media presence and outreach.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="abiji.jpeg" alt="Abhijith">
+      <div class="info">
+        <h2>Abhijith</h2>
+        <p class="role">Coordinator</p>
+        <p class="bio">Ensures smooth planning and execution.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="deve.jpeg" alt="Devendu">
+      <div class="info">
+        <h2>Devendu</h2>
+        <p class="role">Creative Head</p>
+        <p class="bio">Turns ideas into impact.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="alisha.jpeg" alt="Alisha">
+      <div class="info">
+        <h2>Alisha</h2>
+        <p class="role">Design Head</p>
+        <p class="bio">Designs clean and expressive visuals.</p>
+      </div>
+    </div>
+
+    <div class="member">
+      <img src="tom.jpeg" alt="Tom">
+      <div class="info">
+        <h2>Tom</h2>
+        <p class="role">Treasurer</p>
+        <p class="bio">Handles finances and resources.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Follow Our Journey</h3>
+    <p>Moments, milestones, and memories</p>
+
+    <a class="insta-btn" href="https://www.instagram.com/ascensus_03?igsh=dmdhaTIxMWU5ajA=" target="_blank">
+      <svg class="insta-icon" viewBox="0 0 24 24" fill="none">
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/>
+      </svg>
+      @ascensus_03
+    </a>
+
+    <span>© 2026 Ascensus. All rights reserved.</span>
+  </footer>
+
+</body>
+</html>
